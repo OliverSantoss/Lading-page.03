@@ -218,10 +218,19 @@ section.sessao3 {
     background-color: white;
 }
 
-.sobre-author {
-    float: left;
+.scrollEquipe{
     max-width: 600px;
     padding-left: 30px;
+    overflow: hidden;
+}
+
+.scroll-wraper{
+    width: 100%;
+}
+
+.sobre-author {
+    float: left;
+    width: 100%;
 }
 
 .titulo-author {
