@@ -220,7 +220,7 @@ section.sessao3 {
 
 .scrollEquipe{
     max-width: 600px;
-    padding-left: 30px;
+    padding-left: 20px;
     overflow: hidden;
 }
 
@@ -231,6 +231,7 @@ section.sessao3 {
 .sobre-author {
     float: left;
     width: 100%;
+    padding: 0 20px;
 }
 
 .titulo-author {
@@ -285,7 +286,7 @@ section.sessao3 {
     float: left;
     margin-top: 8px;
     /* margin-left: 30px; Overflow */
-    padding-left: 30px;
+    padding-left: 40px;
 }
 
 .slider-bullets span {
