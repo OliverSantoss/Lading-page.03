@@ -326,7 +326,8 @@ section.sessao4 {
     padding-right: 10px;
 }
 
-.form form input[type=text] {
+.form form input[type=text],
+.form form input[type=email]{
     width: 90%;
     max-width: 480px;
     margin-top: 8px;

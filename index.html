@@ -169,9 +169,11 @@
                     commodo a magna.
                 </p>
 
-                <form>
-                    <input type="text" name="nome" placeholder="Nome*" />
-                    <input type="text" name="email" placeholder="E-mail*" />
+                <form action="form.php" method="post">
+                    <input type="hidden" name="forme" value="Formulário 1" />
+                    <input required type="text" name="nome" placeholder="Nome*" />
+                    <input required type="email" name="email" placeholder="E-mail*" />
+                    <input required type="text" name="telefone" placeholder="Telefone*" />
                     <textarea name="mensagem" placeholder="Mensagem*"></textarea>
                     <div><input type="submit" name="acao" value="Enviar" /></div>
                 </form>
@@ -202,6 +204,18 @@
 
     <script src="js/jquery-3.7.0.min.js"></script>
     <script src="js/functions.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script>
+        $(function(){
+            $('form').ajaxForm({
+                success: function(data){
+                    alert('Formulário enviado')
+                    $('form')[0].reset();
+                }
+            })
+        
+        });
+    </script>
 </body>
 
 </html>
